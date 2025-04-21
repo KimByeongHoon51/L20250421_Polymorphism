@@ -9,7 +9,11 @@
 #include "Slime.h"
 #include "Boar.h"
 #include "Player.h"
+#include "Goal.h"
+#include "Floor.h"
+#include "Wall.h"
 #include "World.h"
+#include "Vector2D.h"
 
 using namespace std;
 
@@ -22,7 +26,7 @@ using namespace std;
 //};
 
 //// name mangling
-//// overload : 함수 이름이 똑같은데 인자가 다를 경우
+//// overload : 함수 이름은 똑같은데 인자가 다를 경우
 //int Adder::Add(int A, int B)
 //{
 //	return A + B;
@@ -123,11 +127,21 @@ int main()
 
 	MyWorld->SpawnActor(new AGoblin());
 	MyWorld->SpawnActor(new ASlime());
+	MyWorld->SpawnActor(new APlayer());
 	MyWorld->SpawnActor(new ABoar());
-
-	//Player, Boar
-	//MyWorld->SpawnActor(new AGoblin());
-	//MyWorld->SpawnActor(new AGoblin());
+	MyWorld->SpawnActor(new AFloor());
+	MyWorld->SpawnActor(new AFloor());
+	MyWorld->SpawnActor(new AFloor());
+	MyWorld->SpawnActor(new AFloor());
+	MyWorld->SpawnActor(new AFloor());
+	MyWorld->SpawnActor(new AFloor());
+	MyWorld->SpawnActor(new AGoal());
+	MyWorld->SpawnActor(new AWall());
+	MyWorld->SpawnActor(new AWall());
+	MyWorld->SpawnActor(new AWall());
+	MyWorld->SpawnActor(new AWall());
+	MyWorld->SpawnActor(new AWall());
+	MyWorld->SpawnActor(new AWall());
 
 	MyWorld->Run();
 

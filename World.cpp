@@ -1,5 +1,7 @@
 #include "World.h"
 #include "Actor.h"
+#include "Wall.h"
+#include "Floor.h"
 
 UWorld::UWorld()
 {

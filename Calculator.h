@@ -17,7 +17,6 @@
 			return A - B;
 		}
 
-
 		T Mul(T A, T B)
 		{
 			return A * B;
